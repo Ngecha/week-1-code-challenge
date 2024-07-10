@@ -70,6 +70,9 @@ function insurance(salary) {
   }
   return nhif;
 }
+let nhifDeducted = insurance(salary);
 
-let netPay = salary - tax + taxRelief - nssf - insurance(salary);
+let netPay = salary - tax + taxRelief - nssf - nhifDeducted;
 let netSalary = alert(netPay);
+
+console.log(nhifPaid);
